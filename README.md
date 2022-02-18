@@ -1,4 +1,4 @@
 # UC de RPCW2022
 
-Autor: André Martins - A84347
+Autor: André Rafael Olim Martins - A84347
 
