@@ -14,18 +14,18 @@
     </meta>
 
     <resumo> 
-        <p>Este trabalho resume-se em fazer um site htlm para a uc de RPCW. 
-        O site tem o tema de jacaré, contém alguma informação basica sobre os mesmos,
-        além de alguns factos e imagens.</p>
-        <p> Terceiro paragrafo a apontar par o 
-            <xref>
-                <url> xml.com</url>
-                <texto> XML </texto>
-            </xref>.</p>
+        <p>Neste trabalho foi fornecido um dataset no formato JSON com o objectivo de o processar e criar uma pagina
+        html funcional a correr em cima de um servidor de nodejs.</p>
+        <p>Para processar o dataset foi criado um script em python que lê o ficheiro, retira a informação necessária
+        e cria todos os ficheiros html necessários.</p>
+        <p>Neste caso foi criado um ficheiro index que contem a pagina principal com os nomes dos filmes e o link para a
+        pagina de cada um deles. Foi também criado uma página para cada filme, com informação relativa ao mesmo.</p>
     </resumo>
 
     <resultados>
-        <resultado> <url> jose.html</url>  <texto> pagina web</texto> </resultado>
-        <resultado> <url> jose.css</url>  <texto> stylesheet do TPC</texto> </resultado>
+        <resultado> <url> cinemaATP.json </url>  <texto> dataset</texto> </resultado>
+        <resultado> <url> make_html.py </url>  <texto> script para ler o dataset e criar os .html</texto> </resultado>
+        <resultado> <url> /htmlpages</url>  <texto> página que contem todos os ficheiros html</texto> </resultado>
+        <resultado> <url> servidor.js</url>  <texto> servidor de nodejs</texto> </resultado>
     </resultados>
 </doc>
