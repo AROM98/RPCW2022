@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC3 - Serviço com interface web com api de dados </titulo>
+        <data> 2022-03-10 </data>
+        <autor>
+            <id> A84347 </id>
+            <nome> André Rafael Olim Martins </nome>
+        </autor>
+        <uc>
+            <sigla> RPCW2022 </sigla>
+            <designacao> Representação e Processamento de Conhecimento na Web </designacao>  
+        </uc>
+    </meta>
+
+    <resumo> 
+        <p>Neste trabalho foi fornecido um dataset no formato JSON com o objectivo de usar o json-server 
+        para ser usado como interface de dados</p>
+        <p>Foi criado o ficheiro escola.js para ter um servidor de nodejs que dá host e cria as páginas .html necessárias</p>
+        <p>O servidor nodejs faz pedidos get na porta 3000 (porta do json-server) para obter os dados que serão apresentados
+        na pagina html.</p>
+    </resumo>
+
+    <resultados>
+        <resultado> <url> db.json </url>  <texto> dataset da escola de música</texto> </resultado>
+        <resultado> <url> escola.js </url>  <texto> servidor de nodejs</texto> </resultado>
+    </resultados>
+</doc>
