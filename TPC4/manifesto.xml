@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC4 - TO-DO List </titulo>
+        <data> 2022-03-21 </data>
+        <autor>
+            <id> A84347 </id>
+            <nome> André Rafael Olim Martins </nome>
+        </autor>
+        <uc>
+            <sigla> RPCW2022 </sigla>
+            <designacao> Representação e Processamento de Conhecimento na Web </designacao>  
+        </uc>
+    </meta>
+
+    <resumo> 
+        <p>Neste trabalho foi fornecido um dataset no formato JSON com o objectivo de usar o json-server 
+        para ser usado como interface de dados</p>
+        <p>Foi criado o ficheiro escola.js para ter um servidor de nodejs que dá host e cria as páginas .html necessárias</p>
+        <p>O servidor nodejs faz pedidos get na porta 3000 (porta do json-server) para obter os dados que serão apresentados
+        na pagina html.</p>
+    </resumo>
+
+    <resultados>
+        <resultado> <url> gtarefas.js </url>  <texto> servidor de nodejs </texto> </resultado>
+        <resultado> <url> static.js </url>  <texto> funções para carregar w3.css e favicon </texto> </resultado>
+        <resultado> <url> package-lock.json </url>  <texto> pacote gerado por npm init </texto> </resultado>
+        <resultado> <url> package.json </url>  <texto> pacote gerado por npm init </texto> </resultado>
+        <resultado> <url> tarefas.json </url>  <texto> dataset json de tarefas </texto> </resultado>
+        <resultado> <url> /public </url>  <texto> pasta com favicon.png e w3.css</texto> </resultado>
+        <resultado> <url> /node_modules </url>  <texto> pasta criada pelo nodejs</texto> </resultado>
+    </resultados>
+</doc>

@@ -1,0 +1,49 @@
+{
+  "tarefas": [
+    {
+      "id": "1",
+      "autor": "Rafa",
+      "datareg": "19-03-2022",
+      "datafinal": "20-03-2022",
+      "descricao": "passar a roupa a ferro",
+      "tipo": "tarefas de casa",
+      "estado": "concluido"
+    },
+    {
+      "id": "2",
+      "autor": "asdfasd",
+      "datareg": "2022-03-09",
+      "datafinal": "2022-03-25",
+      "descricao": "asdfadsf",
+      "tipo": "Emprego",
+      "estado": "por fazer"
+    },
+    {
+      "id": "3",
+      "autor": "sfdgsdfgs",
+      "datareg": "2022-03-31",
+      "datafinal": "2022-03-03",
+      "descricao": "dffdg",
+      "tipo": "Casa",
+      "estado": "por fazer"
+    },
+    {
+      "id": "4",
+      "autor": "wergewrg",
+      "datareg": "2022-03-19",
+      "datafinal": "2022-03-18",
+      "descricao": "efgwer",
+      "tipo": "Casa",
+      "estado": "por fazer"
+    },
+    {
+      "id": "5",
+      "autor": "emerge",
+      "datareg": "2022-03-19",
+      "datafinal": "2022-03-21",
+      "descricao": "ertewte",
+      "tipo": "Pessoal",
+      "estado": "por fazer"
+    }
+  ]
+}

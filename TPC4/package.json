@@ -1,0 +1,17 @@
+{
+  "name": "tpc4",
+  "version": "1.0.0",
+  "description": "to-do list",
+  "main": "gtarefas.js",
+  "scripts": {
+    "test": "node gtarefas.js",
+    "dev": "nodemon gtarefas.js"
+  },
+  "author": "rafa",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.13.0",
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.15"
+  }
+}
