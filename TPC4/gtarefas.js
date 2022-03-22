@@ -471,34 +471,6 @@ var Server = http.createServer(function (req, res) {
                 }
                 break
 
-            case "PUT": ///  NAO ESTA A FUNCIONAR (não percebi porque)
-                    if(req.url == '/tarefas/editar'){
-                        recuperaInfo(req, resultado =>{
-                            console.log('PUT de Tarefa:' + JSON.stringify(resultado))
-                            axios.put("http://localhost:3000/tarefas/"+resultado.id,  resultado)
-                            .then( resp => {
-                                
-                                // Add code to render page with the student record
-                                res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                                res.write(geraPutConfirm(resp.data, d))
-                                res.end()
-                            })
-                            .catch(function(erro){
-                                res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                                res.write('<p>Erro no POST: ' + erro + '</p>')
-                                res.end()
-                            })
-                        })
-                    }
-                    else{
-                        res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
-                        // Replace this code with a POST request to the API server
-                        res.write('<p>Recebi um POST não suportado</p>')
-                        res.write('<p><a href="/">Voltar</a></p>')
-                        res.end()
-    
-                    }
-                    break
             default: 
                 res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'})
                 res.write("<p>" + req.method + " não suportado neste serviço.</p>")
