@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    h1 Registo da Música 
+        span= musica.id
+    h2 22 de Março de 2022
+    p 
+        b  Título: 
+            span= musica.tit
+    p 
+        b  Provinvia: 
+            span=musica.prov
+    p 
+        b  Local: 
+            span=musica.local
+    p 
+        b  Instrumentos: 
+            span=musica.inst
+    p 
+        b  Nome do ficheiro: 
+            span=musica.file
+    p 
+        b  Tipo do ficheiro: 
+            span=musica.fileType
+    p 
+        b  Duração da música: 
+            span=musica.duracao
+    hr 
+    adress 
+        a(href="/musicas") Voltar à lista

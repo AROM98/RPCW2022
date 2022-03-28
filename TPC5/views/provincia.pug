@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1 Lista de Música da provincia: 
+        span= provincia
+    h2 29 de Março de 2022
+    table
+        tr
+            th ID
+            th Título
+        each m in musicas
+            tr 
+                td
+                    a(href="/musicas/"+m.id)= m.id
+                td= m.tit
+            tr
+    hr 
+    adress 
+        a(href="/musicas") Voltar à lista

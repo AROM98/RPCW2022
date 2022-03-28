@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC5 - Expressjs do arquivo de músicas </titulo>
+        <data> 2022-03-29 </data>
+        <autor>
+            <id> A84347 </id>
+            <nome> André Rafael Olim Martins </nome>
+        </autor>
+        <uc>
+            <sigla> RPCW2022 </sigla>
+            <designacao> Representação e Processamento de Conhecimento na Web </designacao>  
+        </uc>
+    </meta>
+
+    <resumo> 
+        <p>Ao dataset fornecido foi adicionado ids para cada musica e ajutado de forma a ficar em formato json.</p>
+        <p>Ao usar o exemplo feito na aula, foram criadas páginas para todas as musicas, para um musica indiviaul e pagina com 
+        uma lista de musicas de uma certa provincia.</p>
+        <p>Foi usado o modulo Express que criou várias pastas com ficheiros para cada página.</p>
+    </resumo>
+
+    <resultados>
+        <resultado> <url> app.js </url>  <texto> servidor de nodejs </texto> </resultado>
+        <resultado> <url> arq-son-EVO.json </url>  <texto> pacote gerado por npm init </texto> </resultado>
+        <resultado> <url> package.json </url>  <texto> pacote gerado por npm init </texto> </resultado>
+    </resultados>
+</doc>
