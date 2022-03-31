@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC6 - Gestor de Ficheiros </titulo>
+        <data> 2022-03-31 </data>
+        <autor>
+            <id> A84347 </id>
+            <nome> André Rafael Olim Martins </nome>
+        </autor>
+        <uc>
+            <sigla> RPCW2022 </sigla>
+            <designacao> Representação e Processamento de Conhecimento na Web </designacao>  
+        </uc>
+    </meta>
+
+    <resumo> 
+        <p>Este trabalho consiste em criar um gestor de ficheiros. Na página inicial é possivel fazer "upload" e 
+        seguidamente os dados são carrregados em dbFiles.json e feito um refresh à página para mostrar o novo ficheiro na lista.</p>
+        <p>Além destas opçôes básicas é também possivel apagar e fazer download (abre uma nova janela com o ficheiro).</p>
+        <p>Para a opção de apagar está a ser usado um hard delete que apaga a entrada do ficheiro json e o ficheiro so sistema, 
+        pórem foi também feito um versão soft que apenas muda o ficheiro para uma directoria de ficheiros "apagados" para
+        serem posteriormente tratados.</p>
+        <p>Na opção de download, apenas é possivel abrir numa janela de Safari, para utilizar outro browser é preciso mudar o 
+        nome da aplicação a ser usada.</p>
+    </resumo>
+
+    <resultados>
+        <resultado> <url> /gficheiros </url>  <texto> pasta que contém todos os ficheiros usados</texto> </resultado>
+        <resultado> <url> /gficheiros/app.js </url>  <texto> servidor de node.js</texto> </resultado>
+        <resultado> <url> /gficheiros/app.js </url>  <texto> template de html </texto> </resultado>
+        <resultado> <url> /gficheiros/dbFiles.json </url>  <texto> json onde são guardados os dados dods ficheiros</texto> </resultado>
+    </resultados>
+</doc>
