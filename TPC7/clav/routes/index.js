@@ -31,21 +31,36 @@ router.get('/classes/:id', function(req, res, next) {
   console.log("ID == ", req.params.id)
   url = "http://clav-api.di.uminho.pt/v2/classes/"+req.params.id+"?apikey=" + token
   getClavData(url).then(data =>{
-    console.log(data.filhos[0].codigo)
+    //console.log(data.filhos[0].codigo)
     filhos = []
     proceRelacion = []
     for (filho in data.filhos){
-      code = data.filhos[filho]
-      console.log("CODIGO == ", code)
+      code = data.filhos[filho].codigo
+      //console.log("CODIGO == ", code)
       filhos_str = JSON.stringify(data.filhos[filho])
       tmp = {
-        code : filhos_str,
+        codigo : code,
+        dados : filhos_str
       }
       filhos.push(tmp)
     }
-    console.log("FILHOS == ", filhos)
+    //console.log("FILHOS == ", filhos)
     for (procc in data.processosRelacionados){
-      proceRelacion.push(JSON.stringify(data.processosRelacionados[procc]))
+      //console.log("####################")
+      tipos = ["eCruzadoCom", "eComplementarDe", "eSuplementoDe", "eSuplementoPara"]
+      data.processosRelacionados[procc].idRel 
+      if(tipos.includes(data.processosRelacionados[procc].idRel)){
+        code = data.processosRelacionados[procc].codigo
+        relacoes = JSON.stringify(data.processosRelacionados[procc])
+        console.log(data.processosRelacionados[procc])
+        tmp = {
+          codigo : code,
+          dados : relacoes
+        }
+        proceRelacion.push(tmp)
+      }
+      //console.log("RELALOES == ", proceRelacion)
+      //proceRelacion.push(JSON.stringify(data.processosRelacionados[procc]))
     }
     //res.status(200).jsonp(data)
     res.render('classe', { title: 'CLAV', entrada: data, f: filhos, pro: proceRelacion});

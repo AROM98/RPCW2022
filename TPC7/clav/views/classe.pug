@@ -19,10 +19,14 @@ block content
         b  Lista de Descendentes: 
             span=ol
                 each fi in f
-                    li= fi
+                    li= fi.codigo
+                        a(href="/clav/classes/c"+fi.codigo)= fi.dados 
     p 
         b  Lista de processos relacionados: 
-            span=pro
+            span=ol
+                each p in pro
+                    li= p.codigo
+                        a(href="/clav/classes/c"+p.codigo)= p.dados 
     hr 
     adress 
         a(href="/clav") Voltar à lista
