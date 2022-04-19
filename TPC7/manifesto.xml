@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC7 -  CLAV: Classificação e Avaliação da Informação Pública </titulo>
+        <data> 2022-04-19 </data>
+        <autor>
+            <id> A84347 </id>
+            <nome> André Rafael Olim Martins </nome>
+        </autor>
+        <uc>
+            <sigla> RPCW2022 </sigla>
+            <designacao> Representação e Processamento de Conhecimento na Web </designacao>  
+        </uc>
+    </meta>
+
+    <resumo> 
+        <p>Este trabalho consiste em usar a api do CLAV para ir buscar os dados para podermos usá-los na nossa página</p>
+        <p>Na página principal é mostrado o titulo e uma tabela com os dados de nivel 1, com hiperlinnks no seu código.</p>
+        <p>Ao carregar num desses códigos, somos levados para uma página que mostra todas as informações da classe.</p>
+        <p>Nesta informação também está incluidos as classes filhas e os processos relacionados, ambos com hiperlinks para as
+        suas respectivas páginas.</p>
+        <p>Nos resultados, encontram-se os directorios e ficheiros alterados, além da base criada pelo express</p>
+    </resumo>
+
+    <resultados>
+        <resultado> <url> /clav </url>  <texto> pasta que contém todos os ficheiros usados</texto> </resultado>
+        <resultado> <url> /clav/app.js </url>  <texto> servidor de node.js</texto> </resultado>
+        <resultado> <url> /clav/index.js </url>  <texto> ficheiros onde são definidas as rotas, metodos para ir buscar informação.</texto> </resultado>
+        <resultado> <url> /clav/views/ </url>  <texto> ficheiros de view em pug</texto> </resultado>
+    </resultados>
+</doc>
