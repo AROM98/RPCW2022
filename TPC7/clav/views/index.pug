@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Classes de nível 1:
+   table
+        tr
+            th Código
+            th Título
+        each e in entradas 
+            tr
+                td
+                    a(href="/clav/classes/c"+e.codigo)= e.codigo
+                td= e.titulo
+            tr

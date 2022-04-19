@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1 Informação da classe 
+        span= entrada.codigo
+    p 
+        b  Código: 
+            span=entrada.codigo
+    p 
+        b  Título:  
+            span=entrada.titulo
+    p 
+        b  Descrição:  
+            span=entrada.descricao
+    p 
+        b  Estado: 
+            span=entrada.status
+    p 
+        b  Lista de Descendentes: 
+            span=ol
+                each fi in f
+                    li= fi
+    p 
+        b  Lista de processos relacionados: 
+            span=pro
+    hr 
+    adress 
+        a(href="/clav") Voltar à lista
