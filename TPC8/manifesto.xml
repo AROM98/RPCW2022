@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo> TPC8 -  Testdrive de JQuery </titulo>
+        <data> 2022-04-26 </data>
+        <autor>
+            <id> A84347 </id>
+            <nome> André Rafael Olim Martins </nome>
+        </autor>
+        <uc>
+            <sigla> RPCW2022 </sigla>
+            <designacao> Representação e Processamento de Conhecimento na Web </designacao>  
+        </uc>
+    </meta>
+
+    <resumo> 
+        <p>Apartir do exemplo feito na aula, foi acrescentadoo a opçao de editar e apagar.</p>
+        <p>No inicio é feito um pedido get que usa a função listar para retirar os dados da base de dados, os quais são
+        impressos no pagina com 2 botões a frente. Um botão para cada nova opçpão.</p>
+        <p>Apenas o botão de apagar está a funcionar correctamente, devido a problemas tecnicos.</p>
+        <p>Para o botão funcionar é preciso dar reload a pagina, para que os ids sejam associados ao botão.</p>
+    </resumo>
+
+    <resultados>
+        <resultado> <url> /mypara </url>  <texto> pasta que contém todos os ficheiros usados</texto> </resultado>
+        <resultado> <url> /clav/app.js </url>  <texto> servidor de node.js</texto> </resultado>
+        <resultado> <url> /clav/index.js </url>  <texto> ficheiros onde são definidas as rotas, metodos para ir buscar informação.</texto> </resultado>
+        <resultado> <url> /clav/controllers/para.js </url>  <texto> ficheiro com funçoes de query ao mongodb</texto> </resultado>
+        <resultado> <url> /clav/models/para.js </url>  <texto> ficheiro modelo de acesso ao mongodb</texto> </resultado>
+        <resultado> <url> /paragrafo.html </url>  <texto> ficheiro html base</texto> </resultado>
+        <resultado> <url> /myPara.js </url>  <texto> script de JQuery</texto> </resultado>
+    </resultados>
+</doc>
